@@ -81,15 +81,19 @@
 macros {};
 
 behaviors {};
+
+macros {};
+
+behaviors {};
 keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q                  &kp W           &kp E             &kp R                        &kp T                                                  &kp Y        &kp U              &lt 5 I      &kp O            &mt LC(P) P
-&mt LC(A) A            &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp LS(LG(PRIOR))         &kp SLASH       &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp MINUS
-&mt LC(Z) Z            &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp UNDERSCORE  &kp N        &kp M              &kp COMMA    &kp DOT          &kp QUESTION
-&mt LEFT_SHIFT ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 1 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE   &lt 1 ENTER                                                   &kp DEL
+&kp Q                    &kp W           &kp E             &kp R                        &kp T                                                  &kp Y        &kp U              &lt 5 I      &kp O            &mt LC(P) P
+&mt LC(A) A              &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp LS(LG(PRIOR))         &kp SLASH       &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp MINUS
+&mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp UNDERSCORE  &kp N        &kp M              &kp COMMA    &kp DOT          &kp QUESTION
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 1 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE   &lt 1 ENTER                                                   &kp DEL
 >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -151,19 +155,11 @@ keymap {
 >;
         };
 // ▼▼ ここから追加 ▼▼
-&zip_temp_layer {
-    require-prior-idle-ms = <200>; // キー入力直後の誤爆防止（お好みで調整してください）
-};
 
-&trackball_listener {
-    // トラックボールを動かした時は、レイヤー4を30秒（30000ms）維持する
-    input-processors = <&zip_temp_layer 4 30000>;
-};
 
-&mkp_input_listener {
-    // マウスキー（クリック）を押した時は、タイムアウトを800msに上書き（短縮）する
-    input-processors = <&zip_temp_layer 4 800>;
-};
+
+
+
 // ▲▲ ここまで追加 ▲▲
 
 
