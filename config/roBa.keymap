@@ -150,7 +150,21 @@ keymap {
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
 >;
         };
+// ▼▼ ここから追加 ▼▼
+&zip_temp_layer {
+    require-prior-idle-ms = <200>; // キー入力直後の誤爆防止（お好みで調整してください）
+};
 
+&trackball_listener {
+    // トラックボールを動かした時は、レイヤー4を30秒（30000ms）維持する
+    input-processors = <&zip_temp_layer 4 30000>;
+};
+
+&mkp_input_listener {
+    // マウスキー（クリック）を押した時は、タイムアウトを800msに上書き（短縮）する
+    input-processors = <&zip_temp_layer 4 800>;
+};
+// ▲▲ ここまで追加 ▲▲
 
 
 
