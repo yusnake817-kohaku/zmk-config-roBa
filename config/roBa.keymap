@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 &mt {
     flavor = "balanced";
@@ -9,7 +10,7 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
+    // automouse-layer = <4>;
     scroll-layers = <5>;
 
     // arrows {
@@ -144,5 +145,18 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>; // キー入力直後のトラボ誤反応を防止（ミリ秒）
+};
+
+&trackball_listener {
+    // レイヤー4へ移動し、10000ミリ秒（10秒）維持する
+    input-processors = <&zip_temp_layer 4 10000>;
+};
+
+&mkp_input_listener {
+    // クリック等のマウスボタン操作時にも、維持時間を10秒リセットする
+    input-processors = <&zip_temp_layer 4 10000>;
     };
 };
