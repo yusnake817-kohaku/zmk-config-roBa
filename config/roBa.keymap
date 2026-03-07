@@ -82,7 +82,7 @@
             bindings = <
 &kp Q       &kp W           &kp E             &kp R                        &kp T                                                 &kp Y        &kp U              &lt 5 I      &kp O            &kp P
 &kp A       &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp LS(LG(PRIOR))         &kp APOS       &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp MINUS
-&kp Z       &kp X           &kp C             &kp V                        &kp B        &kp COLON                 &kp SEMICOLON  &kp N        &kp M              &kp COMMA    &kp DOT          &kp QUESTION
+&kp Z       &kp X           &kp C             &kp V                        &kp B        &kp LS(LG(T))             &kp SEMICOLON  &kp N        &kp M              &kp COMMA    &kp DOT          &kp QUESTION
 &kp ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 1 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE  &lt 1 ENTER                                                   &kp DEL
             >;
 
@@ -91,10 +91,10 @@
 
         NUM {
             bindings = <
-&trans        &trans        &trans            &trans               &trans                                    &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4         &kp NUMBER_5  &trans       &kp F13        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F1        &kp F2        &kp F3            &kp F4               &kp F5        &kp F6       &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&kp ESCAPE    &kp LEFT_WIN  &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE     &kp TAB      &kp BACKSPACE  &kp ENTER                                               &kp F12
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW      &trans                                    &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH
+&kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4         &kp NUMBER_5  &trans       &kp F13        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp F1          &kp F2          &kp F3            &kp F4               &kp F5        &kp F6       &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&kp ESCAPE      &kp LEFT_WIN    &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE     &kp TAB      &kp BACKSPACE  &kp ENTER                                               &kp DEL
             >;
         };
 
