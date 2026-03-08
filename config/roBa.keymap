@@ -105,6 +105,7 @@
 &kp F1          &kp F2          &kp F3            &kp F4               &kp F5                &kp F6       &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
 &kp ESCAPE      &kp LEFT_WIN    &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE             &kp TAB      &kp BACKSPACE  &kp ENTER                                               &kp DEL
             >;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         SYMBOLS {
@@ -114,6 +115,7 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3      &kp LEFT_BRACE        &kp EQUAL                    &kp CARET       &kp RIGHT_BRACE        &kp COMMA      &kp PERIOD  &kp PERCENT      &kp BACKSLASH
 &trans                      &trans           &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE             &kp TAB                      &kp BACKSPACE   &kp RET                                                            &kp PIPE
             >;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         ARROW {
@@ -123,8 +125,7 @@
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans                &trans   &trans       &trans              &trans              &trans               &trans
 &trans          &kp LCTRL               &trans          &trans                   &trans   &trans                &kp TAB  &trans                                                                    &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
         MOUSE {
@@ -134,7 +135,6 @@
 &kp LEFT_SHIFT  &kp LS(LG(LEFT_ARROW))  &trans          &kp LS(LG(RIGHT_ARROW))  &trans         &trans          &trans  &trans    &trans    &trans    &trans    &trans
 &kp LCTRL       &trans                  &trans          &trans                   &trans         &trans          &trans  &trans                                  &trans
             >;
-
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
@@ -145,7 +145,6 @@
 &trans    &trans    &trans    &trans    &trans    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans    &trans    &trans    &trans    &trans    &trans          &trans  &trans                          &trans
             >;
-
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
