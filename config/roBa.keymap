@@ -12,6 +12,12 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
+    // 追加: トラックボール動作後のレイヤー維持時間を30秒（30000ms）に設定
+    automouse-layer-timeout-ms = <30000>;
+
+    // 追加: マウスキー(&mkp)クリック後のレイヤー離脱時間を800msに設定
+    automouse-layer-click-timeout-ms = <800>;
+
     // arrows {
     //     layers = <3>;
     //     bindings =
