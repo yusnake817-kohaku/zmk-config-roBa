@@ -12,18 +12,6 @@
 &trackball {
     // automouse-layer = <4>;
     scroll-layers = <5>;
-
-    // arrows {
-    //      layers = <3>;
-    //      bindings =
-    //          <&kp RIGHT_ARROW>,
-    //          <&kp LEFT_ARROW>,
-    //          <&kp UP_ARROW>,
-    //          <&kp DOWN_ARROW>;
-    //      tick = <10>;
-    //      wait-ms = <5>;
-    //      tap-ms = <5>;
-    // };
 };
 
 / {
@@ -143,18 +131,24 @@
             >;
         };
     };
-};
+    
+    // ▼▼ 修正箇所 ▼▼
+    zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <200>;
+    };
 
-// ▼▼ ここから追加 ▼▼
-&zip_temp_layer {
-    require-prior-idle-ms = <200>;
-};
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_temp_layer 4 30000>;
+    };
 
-&trackball_listener {
-    input-processors = <&zip_temp_layer 4 30000>;
+    mkp_input_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_temp_layer 4 800>;
+    };
+    // ▲▲ 修正箇所 ▲▲
 };
-
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 4 800>;
-};
-// ▲▲ ここまで追加 ▲▲
