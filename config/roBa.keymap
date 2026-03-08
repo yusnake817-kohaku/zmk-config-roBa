@@ -62,6 +62,36 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        atmark {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <2 12>;
+        };
+
+        excmark {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <12 24>;
+        };
+
+        hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <7 19>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 31>;
+        };
+
+        prtscr {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <21 33>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
@@ -89,10 +119,10 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W           &kp E             &kp R                        &kp T                                                  &kp Y        &kp U              &lt 5 I      &kp O            &mt LC(P) P
-&mt LC(A) A              &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp C_MUTE                &kp SLASH       &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp MINUS
-&mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp UNDERSCORE  &kp N        &kp M              &kp COMMA    &kp DOT          &kp QUESTION
-&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE   &lt 1 ENTER                                                   &lt 5 ESCAPE
+&kp Q                    &kp W           &kp E             &kp R                        &kp T                                                   &kp Y        &kp U              &lt 5 I      &kp O            &mt LC(P) P
+&mt LC(A) A              &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp C_MUTE                &kp RIGHT_ALT    &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SLASH
+&mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp RIGHT_SHIFT  &kp N        &kp M              &kp COMMA    &kp DOT          &kp UNDERSCORE
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE    &lt 1 ENTER                                                   &lt 5 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
