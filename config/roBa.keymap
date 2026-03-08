@@ -93,7 +93,7 @@
         };
 
         atmark {
-            bindings = <&kp AT>;
+            bindings = <&kp JP_AT>;
             key-positions = <11 1>;
         };
 
@@ -169,7 +169,7 @@
         SYMBOLS {
             bindings = <
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9      &kp LEFT_BRACKET                                                   &kp RIGHT_BRACKET      &kp AMPERSAND  &kp TILDE   &kp EXCLAMATION  &kp PLUS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6      &kp LEFT_PARENTHESIS  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp AT_SIGN    &kp HASH    &kp DOLLAR       &kp ASTERISK
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6      &kp LEFT_PARENTHESIS  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp JP_AT    &kp HASH    &kp DOLLAR       &kp ASTERISK
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3      &kp LEFT_BRACE        &kp EQUAL                    &kp CARET       &kp RIGHT_BRACE        &kp COMMA      &kp PERIOD  &kp PERCENT      &kp BACKSLASH
 &kp LEFT_CONTROL            &trans           &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE             &kp TAB                      &kp BACKSPACE   &kp RET                                                            &kp PIPE
             >;
