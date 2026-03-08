@@ -154,8 +154,8 @@
         default_layer {
             bindings = <
 &kp Q                    &kp W           &kp E             &kp R                        &kp T                                                   &kp Y        &kp U              &lt 5 I      &kp O            &mt LC(P) P
-&mt LC(A) A              &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp C_MUTE                &kp RIGHT_ALT    &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SLASH
-&mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp RIGHT_SHIFT  &kp N        &kp M              &kp COMMA    &kp DOT          &kp UNDERSCORE
+&mt LC(A) A              &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp C_MUTE                &kp RIGHT_ALT    &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp LEFT_BRACKET
+&mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp RIGHT_SHIFT  &kp N        &kp M              &kp COMMA    &kp DOT          &kp LS(INTERNATIONAL_1)
 &mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 2 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE    &lt 1 ENTER                                                   &lt 5 DEL
             >;
 
@@ -173,10 +173,10 @@
 
         SYMBOLS {
             bindings = <
-&trans            &trans        &trans            &trans               &kp INTERNATIONAL_3                                  &kp LS(MINUS)            &kp LS(SEMICOLON)  &kp MINUS   &kp RS(COLON)  &kp SLASH
-&kp LS(N1)        &kp LS(N2)    &kp LS(N3)        &kp LS(N4)           &kp LS(N5)           &trans       &kp RIGHT_ALT      &kp LS(N6)               &kp LS(N7)         &kp LS(N8)  &kp LS(N9)     &kp N0
-&kp LEFT_SHIFT    &trans        &trans            &trans               &kp LEFT_BRACKET     &kp F10      &kp RIGHT_BRACKET  &kp LS(INTERNATIONAL_1)  &kp COMMA          &kp PERIOD  &kp SLASH      &kp BACKSLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE            &kp TAB      &kp BACKSPACE      &kp RET                                                                &kp DEL
+&trans            &trans        &trans            &trans               &kp INTERNATIONAL_3                                &kp LS(MINUS)            &kp LS(SEMICOLON)  &kp MINUS   &kp RS(COLON)  &kp SLASH
+&kp LS(N1)        &kp LS(N2)    &kp LS(N3)        &kp LS(N4)           &kp LS(N5)           &trans       &kp RIGHT_ALT    &kp LS(N6)               &kp LS(N7)         &kp LS(N8)  &kp LS(N9)     &kp N0
+&kp LEFT_SHIFT    &trans        &trans            &kp RIGHT_BRACKET    &trans               &kp F10      &kp RIGHT_SHIFT  &kp LS(INTERNATIONAL_1)  &kp BACKSLASH      &kp COMMA   &kp PERIOD     &kp LS(INTERNATIONAL_1)
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE            &kp TAB      &kp BACKSPACE    &kp RET                                                                &kp DEL
             >;
         };
 
