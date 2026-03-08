@@ -93,7 +93,7 @@
         };
 
         atmark {
-            bindings = <&kp JP_AT>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <11 1>;
         };
 
@@ -109,7 +109,7 @@
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <20 32>;
+            key-positions = <12 24>;
         };
 
         prtscr {
@@ -120,6 +120,11 @@
         del {
             bindings = <&kp DEL>;
             key-positions = <40 41>;
+        };
+
+        kara {
+            bindings = <&kp LS(EQUAL)>;
+            key-positions = <20 32>;
         };
     };
 
@@ -151,7 +156,7 @@
 &kp Q                    &kp W           &kp E             &kp R                        &kp T                                                   &kp Y        &kp U              &lt 5 I      &kp O            &mt LC(P) P
 &mt LC(A) A              &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp C_MUTE                &kp RIGHT_ALT    &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SLASH
 &mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp RIGHT_SHIFT  &kp N        &kp M              &kp COMMA    &kp DOT          &kp UNDERSCORE
-&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 2 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE    &lt 1 ENTER                                                   &lt 5 ESCAPE
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 2 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE    &lt 1 ENTER                                                   &lt 5 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -159,28 +164,28 @@
 
         NUM {
             bindings = <
-&kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW      &kp NON_US_BACKSLASH                              &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH
-&kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4         &kp NUMBER_5          &trans       &kp F13        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F1            &kp F2          &kp F3            &kp F4               &kp F5                &kp F6       &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&kp LEFT_CONTROL  &kp LEFT_WIN    &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE             &kp TAB      &kp BACKSPACE  &kp ENTER                                               &trans
+&kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW      &kp INTERNATIONAL_3                              &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH
+&kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4         &kp NUMBER_5         &trans       &kp RIGHT_ALT  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp F1            &kp F2          &kp F3            &kp F4               &kp F5               &kp F6       &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&kp LEFT_CONTROL  &kp LEFT_WIN    &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE            &kp TAB      &kp BACKSPACE  &kp ENTER                                               &kp DEL
             >;
         };
 
         SYMBOLS {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9      &kp LEFT_BRACKET                                                   &kp RIGHT_BRACKET      &kp AMPERSAND  &kp TILDE   &kp EXCLAMATION  &kp PLUS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6      &kp LEFT_PARENTHESIS  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp JP_AT    &kp HASH    &kp DOLLAR       &kp ASTERISK
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3      &kp LEFT_BRACE        &kp EQUAL                    &kp CARET       &kp RIGHT_BRACE        &kp COMMA      &kp PERIOD  &kp PERCENT      &kp BACKSLASH
-&kp LEFT_CONTROL            &trans           &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE             &kp TAB                      &kp BACKSPACE   &kp RET                                                            &kp PIPE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9      &kp RIGHT_BRACKET                                  &kp LS(INTERNATIONAL_3)  &kp INTERNATIONAL_3  &kp RS(N4)  &kp EXCLAMATION  &kp PLUS
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6      &kp LS(N8)         &trans         &kp RIGHT_ALT    &kp LS(N9)               &kp LEFT_BRACKET     &kp HASH    &kp DOLLAR       &kp ASTERISK
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3      &kp RIGHT_BRACKET  &kp EQUAL      &kp RIGHT_SHIFT  &kp RIGHT_BRACE          &kp COMMA            &kp PERIOD  &kp SLASH        &kp BACKSLASH
+&kp LEFT_CONTROL            &trans           &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE          &kp TAB        &kp BACKSPACE    &kp RET                                                                    &kp PIPE
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                     &trans       &trans              &kp LS(UP_ARROW)    &trans               &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &kp LC(NUMBER_0)      &trans      &kp PAGE_UP  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp PAGE_DOWN
-&kp LEFT_SHIFT  &kp LG(LA(LEFT_ARROW))  &kp LEFT_ALT    &kp LG(LA(RIGHT_ARROW))  &trans   &trans                &trans      &trans       &trans              &trans              &trans               &trans
-&kp LCTRL       &trans                  &trans          &trans                   &trans   &trans                &kp DELETE  &kp TAB                                                                   &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                          &trans       &trans              &kp LS(UP_ARROW)    &trans               &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &kp LC(NUMBER_0)      &trans           &kp PAGE_UP  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp PAGE_DOWN
+&kp LEFT_SHIFT  &kp LG(LA(LEFT_ARROW))  &kp LEFT_ALT    &kp LG(LA(RIGHT_ARROW))  &trans   &trans                &kp RIGHT_SHIFT  &trans       &trans              &trans              &trans               &trans
+&kp LCTRL       &trans                  &trans          &trans                   &trans   &trans                &kp DELETE       &kp TAB                                                                   &trans
             >;
         };
 
