@@ -23,7 +23,7 @@
 
 // マウスキー（&mkp）をクリックした時、レイヤー4のタイムアウトを400msで上書き
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 400>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 400>; };
 
 // ▼▼▼ ルートノード開始 ▼▼▼
 
