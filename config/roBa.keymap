@@ -64,23 +64,23 @@
         };
 
         atmark {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <2 12>;
+            bindings = <&kp AT>;
+            key-positions = <11 1>;
         };
 
         excmark {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <12 24>;
+            key-positions = <11 23>;
         };
 
         hyphen {
             bindings = <&kp MINUS>;
-            key-positions = <7 19>;
+            key-positions = <8 20>;
         };
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <19 31>;
+            key-positions = <20 32>;
         };
 
         prtscr {
@@ -125,7 +125,7 @@
 &mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE    &lt 1 ENTER                                                   &lt 5 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         NUM {
