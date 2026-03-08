@@ -164,8 +164,6 @@
 &kp F1            &kp F2          &kp F3            &kp F4               &kp F5                &kp F6       &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
 &kp LEFT_CONTROL  &kp LEFT_WIN    &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE             &kp TAB      &kp BACKSPACE  &kp ENTER                                               &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         SYMBOLS {
@@ -175,8 +173,6 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3      &kp LEFT_BRACE        &kp EQUAL                    &kp CARET       &kp RIGHT_BRACE        &kp COMMA      &kp PERIOD  &kp PERCENT      &kp BACKSLASH
 &kp LEFT_CONTROL            &trans           &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE             &kp TAB                      &kp BACKSPACE   &kp RET                                                            &kp PIPE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         ARROW {
@@ -186,8 +182,6 @@
 &kp LEFT_SHIFT  &kp LG(LA(LEFT_ARROW))  &kp LEFT_ALT    &kp LG(LA(RIGHT_ARROW))  &trans   &trans                &trans      &trans       &trans              &trans              &trans               &trans
 &kp LCTRL       &trans                  &trans          &trans                   &trans   &trans                &kp DELETE  &kp TAB                                                                   &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
         MOUSE {
@@ -198,7 +192,7 @@
 &kp LCTRL       &trans                  &trans    &trans                   &trans         &trans          &trans  &trans                                  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
         };
 
         SCROLL {
