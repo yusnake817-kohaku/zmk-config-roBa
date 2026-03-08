@@ -151,7 +151,7 @@
 &kp Q                    &kp W           &kp E             &kp R                        &kp T                                                   &kp Y        &kp U              &lt 5 I      &kp O            &mt LC(P) P
 &mt LC(A) A              &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp C_MUTE                &kp RIGHT_ALT    &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SLASH
 &mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp RIGHT_SHIFT  &kp N        &kp M              &kp COMMA    &kp DOT          &kp UNDERSCORE
-&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE    &lt 1 ENTER                                                   &lt 5 ESCAPE
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN    &kp INT_MUHENKAN  &lt_to_layer_0 2 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE    &lt 1 ENTER                                                   &lt 5 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -197,10 +197,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LC(N0)      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
+&trans  &kp LC(W)  &trans  &trans  &kp LS(LC(T))                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans         &kp LC(N0)      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans         &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans         &trans          &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
