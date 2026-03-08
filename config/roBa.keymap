@@ -47,14 +47,14 @@
     scroll-layers = <5>;
 };
 
-// マウスキー（&mkp）をクリックした時、レイヤー4のタイムアウトを800msで上書き
+// マウスキー（&mkp）をクリックした時、レイヤー4のタイムアウトを600msで上書き
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 4 800>; };
 
 // ▼▼▼ ルートノード開始 ▼▼▼
 
 / {
-    // トラックボールを動かした時、レイヤー4へ30秒（30000ms）で移行
+    // トラックボールを動かした時、レイヤー4へ20秒（20000ms）で移行
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
