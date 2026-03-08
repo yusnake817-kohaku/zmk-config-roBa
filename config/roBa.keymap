@@ -87,11 +87,6 @@
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-
         atmark {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <11 1>;
