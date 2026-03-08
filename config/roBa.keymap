@@ -154,7 +154,7 @@
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                     &trans       &trans              &kp LS(UP_ARROW)    &trans               &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &kp LC(NUMBER_0)      &trans      &kp PAGE_UP  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp PAGE_DOWN
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LEFT_ALT    &kp LG(LS(RIGHT_ARROW))  &trans   &trans                &trans      &trans       &trans              &trans              &trans               &trans
+&kp LEFT_SHIFT  &kp LG(LA(LEFT_ARROW))  &kp LEFT_ALT    &kp LG(LA(RIGHT_ARROW))  &trans   &trans                &trans      &trans       &trans              &trans              &trans               &trans
 &kp LCTRL       &trans                  &trans          &trans                   &trans   &trans                &kp DELETE  &kp TAB                                                                   &trans
             >;
 
