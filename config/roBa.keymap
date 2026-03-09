@@ -63,7 +63,7 @@
 
         excmark {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <11 23>;
+            key-positions = <12 24>;
         };
 
         hyphen {
@@ -73,7 +73,7 @@
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <12 24>;
+            key-positions = <13 25>;
         };
 
         prtscr {
@@ -109,6 +109,11 @@
         eq {
             bindings = <&kp RS(UNDER)>;
             key-positions = <32 20>;
+        };
+
+        percent {
+            bindings = <&kp LS(N5)>;
+            key-positions = <11 23>;
         };
     };
 
