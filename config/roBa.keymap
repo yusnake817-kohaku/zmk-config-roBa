@@ -138,21 +138,23 @@
         default_layer {
             bindings = <
 &kp Q                    &kp W           &kp E                         &kp R                        &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &mt LC(P) P
-&mt LC(A) A              &kp S           &kp D                         &kp F                        &kp G        &kp C_MUTE                &kp RIGHT_ALT  &kp H        &kp J  &kp K      &kp L    &kp LEFT_BRACKET
+&mt LC(A) A              &kp S           &kp D                         &kp F                        &kp G        &kp LC(N0)                &kp RIGHT_ALT  &kp H        &kp J  &kp K      &kp L    &kp LEFT_BRACKET
 &mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C                   &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp LEFT_GUI   &kp N        &kp M  &kp COMMA  &kp DOT  &kp LS(INTERNATIONAL_1)
 &mt LEFT_CONTROL ESCAPE  &kp LEFT_SHIFT  &mt LEFT_ALT INTERNATIONAL_5  &lt_to_layer_0 1 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 1 ENTER                             &lt 5 DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
         };
 
         NUM {
             bindings = <
 &kp LS(N1)        &kp LS(N2)      &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                                            &kp LS(N6)     &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp INTERNATIONAL_3
-&kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5  &trans               &kp RIGHT_ALT      &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5  &kp C_MUTE           &kp RIGHT_ALT      &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp F1            &kp F2          &kp F3          &kp F4          &kp F5        &kp F6               &kp F7             &kp F8         &kp F9        &kp F10       &kp F11       &kp F12
 &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp RIGHT_BRACKET  &kp BACKSLASH                                            &kp DEL
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
         };
 
         SYMBOLS {
@@ -175,10 +177,10 @@
 
         MOUSE {
             bindings = <
-&trans            &kp LC(W)               &trans    &trans                   &kp LS(LC(T))                          &trans    &trans    &trans    &trans    &trans
-&trans            &mkp MB2                &mkp MB3  &mkp MB1                 &mkp MB4       &kp LC(N0)      &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB5
-&kp LEFT_SHIFT    &kp LS(LG(LEFT_ARROW))  &trans    &kp LS(LG(RIGHT_ARROW))  &trans         &trans          &trans  &trans    &trans    &trans    &trans    &trans
-&mt LCTRL ESCAPE  &trans                  &trans    &trans                   &trans         &trans          &trans  &trans                                  &trans
+&trans            &kp LC(W)               &trans        &trans                   &kp LS(LC(T))                          &trans    &trans    &trans    &trans    &trans
+&trans            &mkp MB2                &mkp MB3      &mkp MB1                 &trans         &kp LC(N0)      &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB5
+&trans            &kp LS(LG(LEFT_ARROW))  &trans        &kp LS(LG(RIGHT_ARROW))  &trans         &trans          &trans  &trans    &trans    &trans    &trans    &trans
+&mt LCTRL ESCAPE  &kp LEFT_SHIFT          &kp LEFT_ALT  &trans                   &trans         &trans          &trans  &trans                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
