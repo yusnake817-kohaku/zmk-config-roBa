@@ -21,9 +21,9 @@
     scroll-layers = <5>;
 };
 
-// マウスキー（&mkp）をクリックした時、レイヤー4のタイムアウトを400msで上書き
+// マウスキー（&mkp）をクリックした時、レイヤー4のタイムアウトを300msで上書き
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 400>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 300>; };
 
 // ▼▼▼ ルートノード開始 ▼▼▼
 
