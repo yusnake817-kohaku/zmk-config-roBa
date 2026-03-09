@@ -137,10 +137,10 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W           &kp E             &kp R                        &kp T                                                 &kp Y        &kp U              &lt 5 I      &kp O            &mt LC(P) P
-&mt LC(A) A              &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F                 &kp G        &kp C_MUTE                &kp RIGHT_ALT  &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp LEFT_BRACKET
-&mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp LEFT_GUI   &kp N        &kp M              &kp COMMA    &kp DOT          &kp LS(INTERNATIONAL_1)
-&mt LEFT_CONTROL ESCAPE  &kp LEFT_SHIFT  &kp INT_MUHENKAN  &lt_to_layer_0 1 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 1 ENTER                                                   &lt 5 DEL
+&kp Q                    &kp W           &kp E                         &kp R                        &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &mt LC(P) P
+&mt LC(A) A              &kp S           &kp D                         &kp F                        &kp G        &kp C_MUTE                &kp RIGHT_ALT  &kp H        &kp J  &kp K      &kp L    &kp LEFT_BRACKET
+&mt LC(Z) Z              &mt LC(X) X     &mt LC(C) C                   &mt LC(V) V                  &kp B        &mt LS(LG(T)) F10         &kp LEFT_GUI   &kp N        &kp M  &kp COMMA  &kp DOT  &kp LS(INTERNATIONAL_1)
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_SHIFT  &mt LEFT_ALT INTERNATIONAL_5  &lt_to_layer_0 1 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 1 ENTER                             &lt 5 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -157,10 +157,10 @@
 
         SYMBOLS {
             bindings = <
-&trans            &trans        &trans            &trans               &kp INTERNATIONAL_3                                &kp LS(MINUS)            &kp LS(SEMICOLON)  &kp MINUS   &kp RS(COLON)  &kp SLASH
-&kp LS(N1)        &kp LS(N2)    &kp LS(N3)        &kp LS(N4)           &kp LS(N5)           &trans       &kp RIGHT_ALT    &kp LS(N6)               &kp LS(N7)         &kp LS(N8)  &kp LS(N9)     &kp N0
-&kp LEFT_SHIFT    &trans        &trans            &kp RIGHT_BRACKET    &trans               &kp F10      &kp RIGHT_SHIFT  &kp LS(INTERNATIONAL_1)  &kp BACKSLASH      &kp COMMA   &kp PERIOD     &kp LS(INTERNATIONAL_1)
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp INT_MUHENKAN  &kp INTERNATIONAL_4  &kp SPACE            &kp TAB      &kp BACKSPACE    &kp RET                                                                &kp DEL
+&trans            &trans          &trans                        &trans               &kp INTERNATIONAL_3                              &kp LS(MINUS)            &kp LS(SEMICOLON)  &kp MINUS   &kp RS(COLON)  &kp SLASH
+&kp LS(N1)        &kp LS(N2)      &kp LS(N3)                    &kp LS(N4)           &kp LS(N5)           &trans       &kp RIGHT_ALT  &kp LS(N6)               &kp LS(N7)         &kp LS(N8)  &kp LS(N9)     &kp N0
+&kp LEFT_SHIFT    &trans          &trans                        &kp RIGHT_BRACKET    &trans               &kp F10      &kp LEFT_GUI   &kp LS(INTERNATIONAL_1)  &kp BACKSLASH      &kp COMMA   &kp PERIOD     &kp LS(INTERNATIONAL_1)
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &mt LEFT_ALT INTERNATIONAL_5  &kp INTERNATIONAL_4  &kp SPACE            &kp TAB      &kp BACKSPACE  &kp RET                                                                &kp DEL
             >;
         };
 
@@ -168,8 +168,8 @@
             bindings = <
 &trans            &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                               &trans       &trans              &kp LS(UP_ARROW)    &trans               &trans
 &kp HOME          &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans       &kp RIGHT_ALT  &kp PAGE_UP  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp PAGE_DOWN
-&kp LEFT_ALT      &kp LG(LA(LEFT_ARROW))  &trans          &kp LG(LA(RIGHT_ARROW))  &trans   &trans       &kp LEFT_GUI   &trans       &trans              &trans              &trans               &trans
-&mt LCTRL ESCAPE  &kp LEFT_SHIFT          &trans          &trans                   &trans   &kp TAB      &kp BACKSPACE  &kp ENTER                                                                 &kp DEL
+&trans            &kp LG(LA(LEFT_ARROW))  &trans          &kp LG(LA(RIGHT_ARROW))  &trans   &trans       &kp LEFT_GUI   &trans       &trans              &trans              &trans               &trans
+&mt LCTRL ESCAPE  &kp LEFT_SHIFT          &kp LEFT_ALT    &trans                   &trans   &kp TAB      &kp BACKSPACE  &kp ENTER                                                                 &kp DEL
             >;
         };
 
