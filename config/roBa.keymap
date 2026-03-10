@@ -111,6 +111,11 @@
             bindings = <&mkp MB3>;
             key-positions = <21 33>;
         };
+
+        prev {
+            bindings = <&mkp MB4>;
+            key-positions = <21 20>;
+        };
     };
 
     macros {
