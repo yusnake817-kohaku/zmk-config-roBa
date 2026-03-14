@@ -154,10 +154,10 @@
 
         NUM {
             bindings = <
-&kp LS(N1)        &kp LS(N2)      &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                                                  &kp LS(N6)     &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp INTERNATIONAL_3
-&kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5  &kp C_MUTE           &kp LS(INTERNATIONAL_1)  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F1            &kp F2          &kp F3          &kp F4          &kp F5        &kp F6               &kp F7                   &kp F8         &kp F9        &kp F10       &kp F11       &kp F12
-&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp RIGHT_BRACKET        &kp BACKSLASH                                            &kp DEL
+&kp LS(N1)        &kp LS(N2)      &kp LS(N3)    &kp LS(N4)      &kp LS(N5)                                                 &kp LS(N6)                   &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp INTERNATIONAL_3
+&kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp C_MUTE        &kp LS(INTERNATIONAL_1)  &kp NUMBER_6                 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp F1            &kp F2          &kp F3        &kp F4          &kp F5          &kp F6            &kp F7                   &kp F8                       &kp F9        &kp F10       &kp F11       &kp F12
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW          &mt BACKSLASH RIGHT_BRACKET                                            &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
