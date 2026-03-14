@@ -143,10 +143,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E             &kp R                          &kp T                                                           &kp Y        &kp U  &kp I      &kp O    &mt LC(P) P
-&kp A             &kp S           &kp D             &kp F                          &kp G        &kp LC(N0)                       &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &lt 5 L  &mkp MB1
-&mt LC(Z) Z       &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                    &kp B        &mt LS(LG(T)) LA(ESCAPE)         &kp LEFT_GUI      &kp N        &kp M  &kp COMMA  &kp DOT  &mkp MB2
-&kp LEFT_CONTROL  &kp LEFT_SHIFT  &mt LEFT_ALT TAB  &lt_to_layer_0 1 INT_MUHENKAN  &lt 3 SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp BACKSPACE     &lt 1 ENTER                             &lt 5 DEL
+&kp Q             &kp W           &kp E             &kp R                          &kp T                                                           &kp Y        &kp U  &kp I        &kp O    &kp P
+&kp A             &kp S           &kp D             &kp F                          &kp G        &kp LC(N0)                       &kp LEFT_BRACKET  &kp H        &kp J  &mt LC(K) K  &lt 5 L  &mkp MB1
+&mt LC(Z) Z       &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                    &kp B        &mt LS(LG(T)) LA(ESCAPE)         &kp LEFT_GUI      &mt LC(N) N  &kp M  &kp COMMA    &kp DOT  &mkp MB2
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &mt LEFT_ALT TAB  &lt_to_layer_0 1 INT_MUHENKAN  &lt 3 SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp BACKSPACE     &lt 1 ENTER                               &lt 5 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
