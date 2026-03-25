@@ -160,7 +160,7 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E             &mt LC(R) R                    &mt LC(T) T                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp Q             &kp W           &kp E             &kp R                          &mt LC(T) T                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
 &mt LC(A) A       &kp S           &kp D             &mt LC(F) F                    &kp G        &kp LC(N0)                       &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &lt 5 L  &mkp MB1
 &kp Z             &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                    &kp B        &mt LS(LG(T)) LA(ESCAPE)         &kp LEFT_GUI      &mt LC(N) N  &kp M  &kp COMMA  &kp DOT  &mkp MB2
 &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mt LEFT_ALT TAB  &lt_to_layer_0 1 INT_MUHENKAN  &lt 3 SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp BACKSPACE     &lt 1 ENTER                             &lt 5 DEL
@@ -191,10 +191,10 @@
 
         ARROW {
             bindings = <
-&trans     &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                  &trans       &trans              &kp LS(UP_ARROW)    &trans               &trans
-&kp HOME   &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans          &kp RIGHT_ALT  &kp PAGE_UP  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp PAGE_DOWN
-&trans     &kp LG(LA(LEFT_ARROW))  &trans          &kp LG(LA(RIGHT_ARROW))  &trans   &kp ESCAPE      &kp LEFT_GUI   &trans       &trans              &trans              &trans               &trans
-&kp LCTRL  &kp LEFT_SHIFT          &kp LEFT_ALT    &trans                   &trans   &kp TAB         &kp BACKSPACE  &kp ENTER                                                                 &kp DEL
+&trans     &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                  &trans       &trans                  &kp LS(UP_ARROW)    &trans                   &trans
+&kp HOME   &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans          &kp RIGHT_ALT  &kp PAGE_UP  &kp LS(LEFT_ARROW)      &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)      &kp PAGE_DOWN
+&trans     &kp LG(LA(LEFT_ARROW))  &trans          &kp LG(LA(RIGHT_ARROW))  &trans   &kp ESCAPE      &kp LEFT_GUI   &trans       &kp LC(LG(LEFT_ARROW))  &trans              &kp LG(LC(RIGHT_ARROW))  &trans
+&kp LCTRL  &kp LEFT_SHIFT          &kp LEFT_ALT    &trans                   &trans   &kp TAB         &kp BACKSPACE  &kp ENTER                                                                         &kp DEL
             >;
         };
 
