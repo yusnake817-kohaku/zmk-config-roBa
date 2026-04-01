@@ -121,8 +121,23 @@
         };
 
         colon {
-            bindings = <&kp COLON>;
+            bindings = <&kp APOSTROPHE>;
             key-positions = <7 19>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <6 18>;
+        };
+
+        lkagi {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <4 14>;
+        };
+
+        rkagi {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <5 17>;
         };
     };
 
@@ -160,10 +175,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E             &kp R                          &mt LC(T) T                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LC(A) A       &kp S           &kp D             &mt LC(F) F                    &kp G        &kp LC(N0)                       &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &lt 5 L  &mkp MB1
-&kp Z             &mt LC(X) X     &mt LC(C) C       &mt LC(V) V                    &kp B        &mt LS(LG(T)) LA(ESCAPE)         &kp LEFT_GUI      &mt LC(N) N  &kp M  &kp COMMA  &kp DOT  &mkp MB2
-&kp LEFT_CONTROL  &kp LEFT_SHIFT  &mt LEFT_ALT TAB  &lt_to_layer_0 1 INT_MUHENKAN  &lt 3 SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp BACKSPACE     &lt 1 ENTER                             &lt 5 DEL
+&kp Q             &kp W         &kp E           &kp R                          &mt LC(T) T                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LC(A) A       &kp S         &kp D           &mt LC(F) F                    &kp G        &kp LC(N0)                       &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &lt 5 L  &mkp MB1
+&kp Z             &mt LC(X) X   &mt LC(C) C     &mt LC(V) V                    &kp B        &mt LS(LG(T)) LA(ESCAPE)         &kp LEFT_GUI      &mt LC(N) N  &kp M  &kp COMMA  &kp DOT  &mkp MB2
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt_to_layer_0 1 INT_MUHENKAN  &lt 3 SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp BACKSPACE     &lt 1 ENTER                             &mt RCTRL DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
