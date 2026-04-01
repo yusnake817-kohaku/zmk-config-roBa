@@ -137,7 +137,7 @@
 
         rkagi {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <5 17>;
+            key-positions = <3 13>;
         };
     };
 
