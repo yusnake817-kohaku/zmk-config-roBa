@@ -45,11 +45,6 @@
             key-positions = <12 11>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         atmark {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <11 1>;
